@@ -18,13 +18,8 @@
                 let number_of_data_points = prompt("Amount of Data:");
                 let number_of_hidden_layers = prompt("Sum of Hidden Layers:");
 
-                try {
-                    let dice_roll = task_difficulty - 2 * number_of_data_points - number_of_hidden_layers;
-                    alert("Task Difficulty: " + task_difficulty + "\nAmount of Data: " + number_of_data_points + "\nSum of Hidden Layers: " + number_of_hidden_layers + "\n\nYou need to roll " + dice_roll + " or more.");
-                }
-                catch (err) {
-                    alert("Error. Invalid input!");
-                }
+                let dice_roll = task_difficulty - 2 * number_of_data_points - number_of_hidden_layers;
+                alert("Task Difficulty: " + task_difficulty + "\nAmount of Data: " + number_of_data_points + "\nSum of Hidden Layers: " + number_of_hidden_layers + "\n\nYou need to roll " + dice_roll + " or more.");
             }
         });
     </script>
