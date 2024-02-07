@@ -15,11 +15,11 @@
         document.addEventListener('DOMContentLoaded', function() {
             while(true) {
                 let task_difficulty = prompt("Task Difficulty:");
-                let number_of_data_points = prompt("Amount of Data:");
+                let amount_of_training = prompt("Amount of Training on The Task:");
                 let number_of_hidden_layers = prompt("Sum of Hidden Layers:");
 
-                let dice_roll = task_difficulty - 2 * number_of_data_points - number_of_hidden_layers;
-                alert("Task Difficulty: " + task_difficulty + "\nAmount of Data: " + number_of_data_points + "\nSum of Hidden Layers: " + number_of_hidden_layers + "\n\nYou need to roll " + dice_roll + " or more.");
+                let dice_roll = task_difficulty - number_of_data_points - number_of_hidden_layers;
+                alert("Task Difficulty: " + task_difficulty + "\nAmount of Training on The Task: " + number_of_data_points + "\nSum of Hidden Layers: " + number_of_hidden_layers + "\n\nYou need to roll " + dice_roll + " or more.");
             }
         });
     </script>
