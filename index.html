@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuralNet</title>
+    <!-- You can include other head elements here -->
+</head>
+<body>
+
+    <!-- Your HTML content goes here -->
+
+    <script>
+        // Your JavaScript code to be executed at the start
+        document.addEventListener('DOMContentLoaded', function() {
+            while(true) {
+                let task_difficulty = prompt("What is your task difficulty?");
+                let number_of_data_points = prompt("How much data do you have for that task?");
+                let number_of_hidden_layers = prompt("How many hidden layers does your model have?");
+
+                try {
+                    let dice_roll = task_difficulty - number_of_data_points - number_of_hidden_layers;
+                    alert("You need to roll " + dice_roll + " or more.");
+                }
+                catch (err) {
+                    alert("Error. Invalid input!");
+                }
+            }
+        });
+    </script>
+
+    <!-- You can include other body elements here -->
+
+</body>
+</html>
